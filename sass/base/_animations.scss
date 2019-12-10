@@ -14,3 +14,19 @@
         transform: rotate(0deg);
     }
 }
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(.8rem);
+    }
+
+    70% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
