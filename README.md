@@ -1,2 +1,5 @@
 ## Installation
-´´´npm init´´´
+```npm init```
+
+## Run
+```npm run compile:sass```
