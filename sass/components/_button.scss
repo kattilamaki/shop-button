@@ -1,0 +1,25 @@
+.btn {
+    border-radius: 10rem;
+    display: inline-block;
+    background-color: $color-white;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    color: $color-grey-dark;
+    font-size: $default-font-size;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 .5rem 1rem rgba($color-black, .3);
+
+    &:hover {
+        box-shadow: 0 .8rem 1.3rem rgba($color-black, .4);
+    }
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    // font-size: 1.6rem;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 3rem;
+}
