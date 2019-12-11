@@ -8,23 +8,25 @@
     </head>
 
     <body>
-        <a href="#" class="btn" onclick="hideDefaultElements()">
-            <table>
-                <tr class="table-row-1" id="tablerow">
-                  <td class="table-left"><span class="btn-text-plus rotate">＋</span></td>
-                  <td class="table-right"><span class="add-to-cart">Add to cart</span></td>
-                </tr>
-                <tr>
-                    <td><i class="fas fa-shopping-cart"></i></td>
-                </tr>
-            </table>
+        <a href="#" class="btn" onclick="afterClick()">
+            <div>
+                <span id="plus" class="btn-text-plus rotate">＋</span>
+                <span id="add" class="add-to-cart first-view">Add to cart</span>
+                <span id="cart"><i class="fas fa-shopping-cart shopping-cart"></i></span>
+            </div>
         </a>
 
         <script>
-            function hideDefaultElements() {
-                var initialRow = document.getElementById("tablerow");
-                initialRow.classList.add("hide");
+            function hideElement(id) {
+                var element = document.getElementById(id);
+                element.classList.add("hide");
             }
+            
+            function afterClick() {
+                hideElement("plus");
+                hideElement("add");
+            }
+
         </script>
 
     </body>

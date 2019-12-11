@@ -17,3 +17,22 @@
         box-shadow: 0 .6rem .6rem rgba($color-black, .3);
     }
 }
+
+.rotate {
+    float: left;
+    animation-name: rotate90Degrees;
+    animation-duration: 0.4s;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.reveal {
+    visibility: visible;
+}
+
+.shopping-cart {
+    float: left;
+    visibility: hidden;
+}
