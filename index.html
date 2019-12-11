@@ -6,13 +6,22 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
 
-<a href="#" class="btn">
-    <table>
-        <tr class="table-row">
-          <td class="table-left"><span class="btn-text-plus rotate">＋</span></td>
-          <td class="table-right"><span class="add-to-cart">Add to cart</span></td>
-        </tr>
-    </table>
-</a>
+    <body>
+        <a href="#" class="btn" onclick="hideDefaultElements()">
+            <table>
+                <tr class="table-row-1" id="tablerow">
+                  <td class="table-left"><span class="btn-text-plus rotate">＋</span></td>
+                  <td class="table-right"><span class="add-to-cart">Add to cart</span></td>
+                </tr>
+            </table>
+        </a>
 
+        <script>
+            function hideDefaultElements() {
+                var plus = document.getElementById("tablerow");
+                plus.classList.add("hide");
+            }
+        </script>
+
+    </body>
 </html>
