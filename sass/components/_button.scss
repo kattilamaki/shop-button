@@ -12,4 +12,8 @@
         box-shadow: 0 .6rem 1.1rem rgba($color-black, .3);
         color: $color-black;
     }
+
+    &:active {
+        box-shadow: 0 .6rem .6rem rgba($color-black, .3);
+    }
 }
